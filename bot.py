@@ -71,5 +71,5 @@ async def rand_error(ctx, error):
 
 
 #Bot Token Pairing-----------------------------------------
-client.run('NzMxODk1NTc5MTI2MjY4MDA5.XwstPg.jOVkW9Ao6q_bFxr8H7LYEhoI8sk')
+client.run(os.environ['TOKEN'])
 
