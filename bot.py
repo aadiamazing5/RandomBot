@@ -1,6 +1,6 @@
 import discord
 import os
-from discord.ext import commands, tasks, timers
+from discord.ext import commands, tasks
 import random
 
 client = commands.Bot(command_prefix='!')
