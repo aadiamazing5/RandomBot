@@ -76,6 +76,11 @@ async def _8ball(ctx, *, question):
     _8ball_card = discord.Embed(colour = discord.Colour.orange(), description = f"**Question:** {question}\n**Answer:** {random.choice(responses)}")
     await ctx.send(embed=_8ball_card)
 
+@client.command() #Server Listing Command (Priv)
+async def servercount(ctx):
+    servercount = len(client.servers)
+    await ctx.send(servercount)
+
 #Error Handling ---------
 
 @rand.error
