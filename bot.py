@@ -80,6 +80,15 @@ async def _8ball(ctx, *, question):
 async def botservers(ctx):
     await ctx.send("I'm in " + str(len(client.guilds)) + " servers")
 
+@client.command(pass_context=True)
+async def listservers(ctx):
+    for x in range(len(client.guilds)):
+        await ctx.send(guild.name + "\n")
+
+
+    for x in range(len(a)): 
+    print a[x]
+
 #Error Handling ---------
 
 @rand.error
