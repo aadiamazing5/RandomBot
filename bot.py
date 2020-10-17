@@ -83,7 +83,7 @@ async def botservers(ctx):
 @client.command(pass_context=True)
 async def listservers(ctx):
     async for guild in client.fetch_guilds(limit=150):
-        print(guild.name)
+        await ctx.send(guild.name)
 
 #Error Handling ---------
 
