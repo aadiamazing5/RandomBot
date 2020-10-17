@@ -78,7 +78,7 @@ async def _8ball(ctx, *, question):
 
 @client.command(pass_context=True)
 async def botservers(ctx):
-    await ctx.send("I'm in " + str(len(client.Guild)) + " servers")
+    await ctx.send("I'm in " + str(len(client.guilds)) + " servers")
 
 #Error Handling ---------
 
